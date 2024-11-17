@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .left{
+            background-color: skyblue;
+            height: 150px;
+            width: 300px;
+            animation: blur linear;
+            animation-timeline: view();
+            animation-range: entry 0%;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+        .right{
+            background-color: skyblue;
+            height: 150px;
+            width: 300px;
+            margin: 10px;
+            animation: blur2 linear;
+            animation-timeline: view();
+            animation-range: entry 0%;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+        @keyframes blur{
+           0%{
+            opacity: 0%;
+            margin-right: 500px;
+             }
+           100%{
+            opacity: 100%;
+           }
+        }
+        @keyframes blur2{
+           0%{
+            opacity: 0%;
+            margin-left: 500px;
+           }
+           100%{
+            opacity: 100%;
+            
+           }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="all">
+    <div class="right"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+</center>
+</body>
+</html>
